@@ -16,18 +16,6 @@
   },
   "repository": "github:jangxyz/svelte-headlessui-multitabbed-window",
   "license": "MIT",
-  "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync",
-    "test": "playwright test",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
-    "format": "prettier --write --plugin-search-dir=. ."
-  },
   "devDependencies": {
     "@playwright/test": "^1.21.0",
     "@rgossiaux/svelte-headlessui": "^1.0.1",
@@ -51,5 +39,31 @@
     "tslib": "^2.3.1",
     "typescript": "~4.6.4"
   },
-  "type": "module"
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    "./ConfirmDialog.svelte": "./ConfirmDialog.svelte",
+    "./MultiTabbedWindow.svelte": "./MultiTabbedWindow.svelte",
+    "./MultiTabbedWindowInner.svelte": "./MultiTabbedWindowInner.svelte",
+    "./Tab.svelte": "./Tab.svelte",
+    "./TabList.svelte": "./TabList.svelte",
+    "./TabbedWindow.svelte": "./TabbedWindow.svelte",
+    "./draggableTabs/DraggableTabContainer.svelte": "./draggableTabs/DraggableTabContainer.svelte",
+    "./draggableTabs/DropRegion.svelte": "./draggableTabs/DropRegion.svelte",
+    "./draggableTabs": "./draggableTabs/index.js",
+    ".": "./index.js",
+    "./resizable/BareResizeSplitter.svelte": "./resizable/BareResizeSplitter.svelte",
+    "./resizable/HorizontalResizeContainer.svelte": "./resizable/HorizontalResizeContainer.svelte",
+    "./resizable/HorizontalResizeContainersGroup.svelte": "./resizable/HorizontalResizeContainersGroup.svelte",
+    "./resizable/HorizontalResizeSplitter.svelte": "./resizable/HorizontalResizeSplitter.svelte",
+    "./resizable/VerticalResizeContainer.svelte": "./resizable/VerticalResizeContainer.svelte",
+    "./resizable/VerticalResizeContainersGroup.svelte": "./resizable/VerticalResizeContainersGroup.svelte",
+    "./resizable/VerticalResizeSplitter.svelte": "./resizable/VerticalResizeSplitter.svelte",
+    "./resizable/draggingGhostAction": "./resizable/draggingGhostAction.js",
+    "./resizable/hoverOnAction": "./resizable/hoverOnAction.js",
+    "./resizable/utils": "./resizable/utils.js",
+    "./types": "./types.js",
+    "./utils": "./utils.js"
+  },
+  "svelte": "./index.js"
 }
