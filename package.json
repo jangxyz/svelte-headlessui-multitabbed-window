@@ -1,8 +1,21 @@
 {
   "name": "svelte-headlessui-multitabbed-window",
   "description": "MultiTab Window component in svelte, powered by headlessui",
+  "version": "0.0.2",
+  "keywords": [
+    "svelte",
+    "headlessui",
+    "svelte3",
+    "svelte-components",
+    "headless",
+    "sveltejs"
+  ],
+  "homepage": "https://github.com/jangxyz/svelte-headlessui-multitabbed-window",
+  "bugs": {
+    "url": "https://github.com/jangxyz/svelte-headlessui-multitabbed-window/issues"
+  },
+  "repository": "github:jangxyz/svelte-headlessui-multitabbed-window",
   "license": "MIT",
-  "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -33,9 +46,10 @@
     "svelte": "^3.44.0",
     "svelte-check": "^2.2.6",
     "svelte-preprocess": "^4.10.6",
+    "svelte2tsx": "^0.5.10",
     "tailwindcss": "^3.0.24",
     "tslib": "^2.3.1",
-    "typescript": "~4.6.2"
+    "typescript": "~4.6.4"
   },
   "type": "module"
 }

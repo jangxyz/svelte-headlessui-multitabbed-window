@@ -1,6 +1,8 @@
-import { camelCase, isObject, kebabCase } from 'lodash-es';
+import { isObject, kebabCase } from 'lodash-es';
 
-export function resolveClasses(...classes: (string | string[] | string[][] | undefined | null | false)[]): string {
+export function resolveClasses(
+  ...classes: (string | string[] | string[][] | undefined | null | false)[]
+): string {
   return classes
     .filter((x) => Boolean(x))
     .map((cls) => {
@@ -14,7 +16,9 @@ export function resolveClasses(...classes: (string | string[] | string[][] | und
     })
     .join(' ');
 }
-export function resolveStyles(...styles: (string | Record<string, string>)[]): string {
+export function resolveStyles(
+  ...styles: (string | Record<string, string>)[]
+): string {
   return styles
     .map((style) => {
       if (typeof style === 'string') {
@@ -30,7 +34,10 @@ export function resolveStyles(...styles: (string | Record<string, string>)[]): s
     .join('; ');
 }
 
-export function get<A extends unknown[]>(target: string | ((...args: A) => string) | undefined, ...args: A) {
+export function get<A extends unknown[]>(
+  target: string | ((...args: A) => string) | undefined,
+  ...args: A
+) {
   if (!target) {
     return '';
   }
@@ -62,7 +69,9 @@ export function observeResize(
     }
   });
 
-  (Array.isArray(elements) ? elements : [elements]).forEach((el) => observer.observe(el));
+  (Array.isArray(elements) ? elements : [elements]).forEach((el) =>
+    observer.observe(el)
+  );
 
   return observer;
 }
