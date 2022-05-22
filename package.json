@@ -1,5 +1,7 @@
 {
-  "name": "svelte-multitabbed-window",
+  "name": "svelte-headlessui-multitabbed-window",
+  "description": "MultiTab Window component in svelte, powered by headlessui",
+  "license": "MIT",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
